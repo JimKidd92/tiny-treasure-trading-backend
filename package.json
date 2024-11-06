@@ -1,11 +1,24 @@
 {
   "name": "tiny-treasure-trading-backend",
   "version": "1.0.0",
-  "description": "Backend for Tiny Trasure Trading Platform",
+  "description": "Backend for Tiny Treasure Trading Platform",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
   "author": "James Kidd",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.682.0",
+    "@aws-sdk/lib-dynamodb": "^3.685.0",
+    "@middy/core": "^5.5.1",
+    "@middy/http-event-normalizer": "^5.5.1",
+    "@middy/http-json-body-parser": "^5.5.1"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.165.0",
+    "aws-cdk-lib": "^2.165.0",
+    "esbuild": "^0.24.0"
+  }
 }
