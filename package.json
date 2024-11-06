@@ -14,7 +14,11 @@
     "@aws-sdk/lib-dynamodb": "^3.685.0",
     "@middy/core": "^5.5.1",
     "@middy/http-event-normalizer": "^5.5.1",
-    "@middy/http-json-body-parser": "^5.5.1"
+    "@middy/http-json-body-parser": "^5.5.1",
+    "@middy/validator": "^5.5.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "ulid": "^2.3.0"
   },
   "devDependencies": {
     "aws-cdk": "^2.165.0",
