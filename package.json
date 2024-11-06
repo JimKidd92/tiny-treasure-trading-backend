@@ -1,0 +1,11 @@
+{
+  "name": "tiny-treasure-trading-backend",
+  "version": "1.0.0",
+  "description": "Backend for Tiny Trasure Trading Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "James Kidd",
+  "license": "ISC"
+}
