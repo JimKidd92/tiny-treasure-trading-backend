@@ -77,7 +77,8 @@ export class TinyTreasureTradingStack extends Stack {
 
     consumersTable.grant(
       consumerGetProfile,
-      "dynamodb:GetItem"
+      "dynamodb:GetItem",
+      "dynamodb:Query"
     );
 
     const consumerAuthenticate = new NodejsFunction(this, "consumer-authenticate", {
@@ -93,8 +94,9 @@ export class TinyTreasureTradingStack extends Stack {
     });
 
     consumersTable.grant(
-      consumerGetProfile,
-      "dynamodb:GetItem"
+      consumerAuthenticate,
+      "dynamodb:GetItem",
+      "dynamodb:Query",
     );
 
     // ***********************************************************************************
